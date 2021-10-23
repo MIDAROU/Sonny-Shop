@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOONY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav_n">
+            <h1 class="logo" >SOONY</h1>
+            <ul class="nav-options">
+                <li class="nav-item"><a href="#">Shop</a></li>
+                <li class="nav-item"><a href="https://www.facebook.com/sonnyshoptn">Facebook</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/sony__shop__">Instagram</a></li>
+            </ul>
+            <select class="language nav-item" name="language" id="language">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <h2 class="title-2">Welcome to soony shop</h2>
+        <h3 class="title-featured">featured</h3>
+        <div class="container-main">
+            <div class="container-1">
+                <img class="img_lady" src="/images/product.jpg" alt="image of a women holding a bag">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4 class="credit">MADE BY <span><a  class="credit_name" href="https://www.linkedin.com/in/mahdibenmhenni/" >MIDAROU</a></span></h4>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-options");
+        const navMargin = document.querySelector("main");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+       function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        navMargin.classList.toggle("active");
+        } 
+    </script>
+</body>
+</html>
